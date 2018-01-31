@@ -3,6 +3,7 @@ const cheerio = require('cheerio');
 
 const options = {
     uri: 'http://www.estacionbustalaveradelareina.com/Busqueda.php',
+    encoding: 'latin1',
     transform: function (body) {
         return cheerio.load(body);
     }
